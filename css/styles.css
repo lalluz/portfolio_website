@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #2d3c49; /* Dark Grey */
+  padding: 8px;
+}
+
+/* Image Responsive */
+img {
+  width: 100%;
+}
+
+/* General */
+p {
+  text-align: center;
+}
+
+/** HEADER **/
+
+/* Container */
+#header-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Content */
+#logo h2 {
+  width: 15%;
+  font-family: "Indie Flower", cursive;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: #fb8c00; /* Orange  */
+  margin: 0;
+  padding: 0;
+}
+
+#name-box {
+  width: 85%;
+  text-align: right;
+  margin-right: 0;
+}
+
+#name {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+}
+
+#role {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Horizontal line */
+.horizontal-line {
+  margin: 10px 0 16px 0;
+  border-top: 2px solid #fb8c00; /* Orange  */
+}
+
+/* My Projects header */
+#my-projects-header {
+  font-weight: lighter;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+/** SECTION PROJECT CONTAINER **/
+
+/* Container */
+#projects-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Single Project Box */
+.project-box {
+  width: 100%;
+}
+
+/* Single project box content */
+.project-name {
+  margin: 4px 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.project-link {
+  margin-top: 0;
+}
+
+.project-link a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link a:hover {
+  color: #fb8c00; /* Orange  */
+}
+
+/** FOOTER **/
+.email {
+  font-size: 0.8em;
+}
+
+
+/** MEDIA QUERIES **/
+
+/* Minor breakpoint to adapt font size */
+@media screen and (min-width: 450px) {
+  #logo h2 {
+    font-size: 3em;
+  }
+  #name {
+    font-size: 2.4em;
+  }
+  #role {
+    font-size: 1em;
+  }
+  #my-projects-header {
+    font-size: 1.5em;
+  }
+}
+
+/* Minor breakpoint to adapt font size */
+@media screen and (min-width: 600px) {
+  #my-projects-header {
+    font-size: 1.8em;
+  }
+  .project-name {
+    font-size: 1.5em;
+  }
+  .project-link a {
+    font-size: 0.8em;
+  }
+  .email {
+    font-size: 0.9em;
+  }
+}
+
+/* Tablet view, projects in two columns */
+@media screen and (min-width: 750px) {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #logo h2 {
+    font-size: 3.5em;
+  }
+  #name {
+    font-size: 3em;
+  }
+  #role {
+    font-size: 1.2em;
+  }
+  #my-projects-header {
+    font-size: 2em;
+    text-align: left;
+  }
+  #projects-container {
+    justify-content: space-between;
+  }
+  .project-box {
+    width: 48%;
+  }
+}
+
+/* Desktop view, projects in three columns */
+@media screen and (min-width: 970px) {
+  #logo h2 {
+    font-size: 4em;
+  }
+  #name {
+    font-size: 3.5em;
+  }
+  #role {
+    font-size: 1.3em;
+  }
+  #my-projects-header {
+    font-size: 2.5em;
+  }
+  .project-name {
+    font-size: 1.6em;
+  }
+  .project-link a {
+    font-size: 0.7em;
+  }
+  .email {
+    font-size: 1em;
+  }
+  #projects-container {
+    justify-content: space-between;
+  }
+  .project-box {
+    width: 32%;
+  }
+}
+
+/* Minor breakpoint, large desktop view */
+@media screen and (min-width: 1020px) {
+  .project-link a {
+    font-size: 0.8em;
+  }
+}
