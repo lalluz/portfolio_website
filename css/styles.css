@@ -14,12 +14,18 @@ img {
   width: 100%;
 }
 
-/* General */
+
+/*
+ * General
+ */
 p {
   text-align: center;
 }
 
-/** HEADER **/
+
+/*
+ * Header
+ */
 
 /* Container */
 #header-container {
@@ -73,7 +79,10 @@ p {
   text-align: center;
 }
 
-/** SECTION PROJECT CONTAINER **/
+
+/*
+ * Section Projects
+ */
 
 /* Container */
 #projects-container {
@@ -88,6 +97,10 @@ p {
 }
 
 /* Single project box content */
+.project-img {
+  border: 1px solid #bdbdbd; /* Light Grey */
+}
+
 .project-name {
   margin: 4px 0 0 0;
   text-align: center;
@@ -115,19 +128,24 @@ p {
 }
 
 
-/** MEDIA QUERIES **/
+/*
+ * MEDIA QUERIES
+ */
 
 /* Minor breakpoint to adapt font size */
 @media screen and (min-width: 450px) {
   #logo h2 {
     font-size: 3em;
   }
+
   #name {
     font-size: 2.4em;
   }
+
   #role {
     font-size: 1em;
   }
+
   #my-projects-header {
     font-size: 1.5em;
   }
@@ -135,19 +153,23 @@ p {
 
 /* Minor breakpoint to adapt font size */
 @media screen and (min-width: 600px) {
+
   #my-projects-header {
     font-size: 1.8em;
   }
+
   .project-name {
     font-size: 1.5em;
   }
+
   .project-link a {
     font-size: 0.8em;
   }
+
   .email {
     font-size: 0.9em;
   }
-}
+    }
 
 /* Tablet view, projects in two columns */
 @media screen and (min-width: 750px) {
@@ -155,22 +177,28 @@ p {
     margin-left: 5%;
     margin-right: 5%;
   }
+
   #logo h2 {
     font-size: 3.5em;
   }
+
   #name {
     font-size: 3em;
   }
+
   #role {
     font-size: 1.2em;
   }
+
   #my-projects-header {
     font-size: 2em;
     text-align: left;
   }
+
   #projects-container {
     justify-content: space-between;
   }
+
   .project-box {
     width: 48%;
   }
@@ -181,27 +209,35 @@ p {
   #logo h2 {
     font-size: 4em;
   }
+
   #name {
     font-size: 3.5em;
   }
+
   #role {
     font-size: 1.3em;
   }
+
   #my-projects-header {
     font-size: 2.5em;
   }
+
   .project-name {
     font-size: 1.6em;
   }
+
   .project-link a {
     font-size: 0.7em;
   }
+
   .email {
     font-size: 1em;
   }
+
   #projects-container {
     justify-content: space-between;
   }
+
   .project-box {
     width: 32%;
   }
