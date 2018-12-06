@@ -107,19 +107,24 @@ p {
 }
 
 /* Single project box content */
+.description {
+  margin: 0;
+}
+
 .project-img {
   border: 1px solid #bdbdbd; /* Light Grey */
 }
 
 .project-name {
-  margin: 4px 0 0 0;
+  margin: 5px 0;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.3em;
 }
 
 .project-link {
-  margin-top: 0;
+
+  margin-bottom: 30px;
 }
 
 .project-link a {
