@@ -13,11 +13,10 @@ This project contains:
  A browser to open it. It works on all kind of devices, from mobile to desktop.
  
 ## How to Run it
-To see the web page simply open the browser at this url:
-` https://lalluz.github.io/portfolio_website/ ` 
+To see the web page simply open the browser at [this url](https://lalluz.github.io/portfolio_website/).
 
 If you are interested in the source code download it and unzip it, or clone this repository:  
-` https://github.com/lalluz/portfolio_website.git `. 
+https://github.com/lalluz/portfolio_website.git. 
  
 
 ## Licence
