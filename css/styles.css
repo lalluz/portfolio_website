@@ -14,7 +14,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: #2d3c49; /* Dark Grey */
-  padding: 8px;
+  padding: 16px;
 }
 
 /* Image Responsive */
@@ -70,8 +70,7 @@ p {
 }
 
 .role {
-  font-size: 0.8em;
-  text-transform: uppercase;
+  font-size: 0.75em;
   margin: 0;
   font-weight: 500;
 }
@@ -83,9 +82,9 @@ p {
 }
 
 /* My Projects header */
-.my-projects-header {
+.projects-header {
   font-weight: lighter;
-  font-size: 1.3em;
+  font-size: 1.4em;
   text-align: center;
 }
 
@@ -103,12 +102,14 @@ p {
 
 /* Single Project Box */
 .project-box {
+  margin-bottom: 16px;
   width: 100%;
 }
 
 /* Single project box content */
 .description {
-  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .project-img {
@@ -116,25 +117,10 @@ p {
 }
 
 .project-name {
+  color: #fb8c00; /* Orange  */
+  font-size: 1.3em;
   margin: 5px 0;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 1.3em;
-}
-
-.project-link {
-
-  margin-bottom: 30px;
-}
-
-.project-link a {
-  font-size: 0.8em;
-  text-decoration: none;
-  color: inherit;
-}
-
-.project-link a:hover {
-  color: #fb8c00; /* Orange  */
 }
 
 /** FOOTER **/
@@ -161,7 +147,7 @@ p {
     font-size: 1em;
   }
 
-  .my-projects-header {
+  .projects-header {
     font-size: 1.5em;
   }
 }
@@ -169,16 +155,12 @@ p {
 /* Minor breakpoint to adapt font size */
 @media screen and (min-width: 600px) {
 
-  .my-projects-header {
+  .projects-header {
     font-size: 1.8em;
   }
 
   .project-name {
     font-size: 1.5em;
-  }
-
-  .project-link a {
-    font-size: 0.8em;
   }
 
   .email {
@@ -205,13 +187,12 @@ p {
     font-size: 1.2em;
   }
 
-  .my-projects-header {
+  .projects-header {
     font-size: 2em;
-    text-align: left;
   }
 
   .projects-container {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .project-box {
@@ -220,7 +201,7 @@ p {
 }
 
 /* Desktop view, projects in three columns */
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1100px) {
   .logo {
     font-size: 4em;
   }
@@ -233,7 +214,7 @@ p {
     font-size: 1.3em;
   }
 
-  .my-projects-header {
+  .projects-header {
     font-size: 2.5em;
   }
 
@@ -241,16 +222,8 @@ p {
     font-size: 1.6em;
   }
 
-  .project-link a {
-    font-size: 0.7em;
-  }
-
   .email {
     font-size: 1em;
-  }
-
-  .projects-container {
-    justify-content: space-between;
   }
 
   .project-box {
@@ -260,7 +233,5 @@ p {
 
 /* Minor breakpoint, large desktop view */
 @media screen and (min-width: 1020px) {
-  .project-link a {
-    font-size: 0.8em;
-  }
+
 }
