@@ -78,14 +78,31 @@ p {
 /* Horizontal line */
 .horizontal-line {
   margin: 10px 0 16px 0;
-  border-top: 2px solid #fb8c00; /* Orange  */
+  border-top: 1px solid #fb8c00; /* Orange  */
 }
 
-/* My Projects header */
+/* Bio section */
+.pic {
+  width: 30%;
+  float: left;
+  margin-right: 16px;
+  padding: 8px;
+}
+
+.elevator-pitch > p {
+  text-align: left;
+}
+
+/* Projects header */
 .projects-header {
   font-weight: lighter;
-  font-size: 1.4em;
   text-align: center;
+  width: auto;
+}
+
+.projects-header > span {
+  border-bottom: 1px solid #fb8c00;
+  padding: 0 16px;
 }
 
 
@@ -108,6 +125,7 @@ p {
 
 /* Single project box content */
 .description {
+  font-size: 0.75em;
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -117,24 +135,47 @@ p {
 }
 
 .project-name {
-  color: #fb8c00; /* Orange  */
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin: 5px 0;
   text-align: center;
+  font-weight: lighter;
 }
 
 /** FOOTER **/
-.email {
-  font-size: 0.8em;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.email {
+  font-size: 0.75em;
+  padding-left: 16px;
+}
+
+.email > a{
+  text-decoration: none;
+  color: #2d3c49;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.icon {
+  width: 32px;
+}
 
 /*
  * MEDIA QUERIES
  */
 
 /* Minor breakpoint to adapt font size */
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 400px) {
+  .description {
+    font-size: 0.9em;
+  }
+
   .logo {
     font-size: 3em;
   }
@@ -148,7 +189,14 @@ p {
   }
 
   .projects-header {
-    font-size: 1.5em;
+    font-size: 1.6em;
+  }
+}
+
+/* Minor breakpoint to adapt font size */
+@media screen and (min-width: 522px) {
+  .pic {
+    width: 25%;
   }
 }
 
@@ -166,7 +214,15 @@ p {
   .email {
     font-size: 0.9em;
   }
-    }
+
+  .pic {
+    width: 20%;
+  }
+
+  .icon {
+    margin-left: 8px;
+  }
+}
 
 /* Tablet view, projects in two columns */
 @media screen and (min-width: 750px) {
@@ -200,8 +256,22 @@ p {
   }
 }
 
+/* Minor breakpoint to adapt pic */
+@media screen and (min-width: 780px) {
+  .pic {
+    width: 18%;
+  }
+}
+
+/* Minor breakpoint to adapt pic */
+@media screen and (min-width: 900px) {
+  .pic {
+    width: 15%;
+  }
+}
+
 /* Desktop view, projects in three columns */
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1044px) {
   .logo {
     font-size: 4em;
   }
@@ -229,9 +299,27 @@ p {
   .project-box {
     width: 32%;
   }
+
+  .pic {
+    width: 13%;
+  }
+
+  .icon {
+    margin-left: 16px;
+  }
 }
 
-/* Minor breakpoint, large desktop view */
-@media screen and (min-width: 1020px) {
+/* Minor breakpoint to adapt pic */
+@media screen and (min-width: 1060px) {
+  .pic {
+    width: 12%;
+  }
+}
 
+
+/* Minor breakpoint, large desktop view */
+@media screen and (min-width: 1120px) {
+  .pic {
+    width: 10%;
+  }
 }
